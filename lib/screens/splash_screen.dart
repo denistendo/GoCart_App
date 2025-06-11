@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 const Text(
                   'GoCart',
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 50,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
