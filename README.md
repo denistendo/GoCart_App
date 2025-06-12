@@ -1,16 +1,25 @@
-# gocart
+# GoCart 🛒👗👞
 
-A new Flutter project.
+GoCart is a simple mobile shopping app built using Flutter. The app allows users to browse and shop for **men's and women's clothes and shoes**. It is designed to be modern, lightweight, and user-friendly for a smooth shopping experience.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 👕 Browse Men’s Clothes
+- 👗 Browse Women’s Clothes
+- 👞 Browse Shoes for Men and Women
+- 🔐 User Authentication (Sign Up & Sign In)
+- 🎯 Beautiful & Responsive UI Design
+- 🌐 Attractive Background Images & Custom Styling
+- 📱 Cross-platform: Android & iOS
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (latest stable version)
+- Android Studio / VS Code
+- Android Emulator or physical device
