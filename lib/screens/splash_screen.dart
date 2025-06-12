@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'signup_screen.dart';
+import 'signin_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -190,8 +191,8 @@ class _SplashScreenState extends State<SplashScreen>
                             TextButton(
                               onPressed: () {
                                 Navigator.push(
-                                  content,
-                                  MaterialPageRoute(builder: (context) => const SignInScreen()),
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const SigninScreen()),
                                 );
                               },
                               child: const Text(
