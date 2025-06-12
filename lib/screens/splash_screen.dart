@@ -189,7 +189,10 @@ class _SplashScreenState extends State<SplashScreen>
                             ),
                             TextButton(
                               onPressed: () {
-                                // Sign In navigation will be added later
+                                Navigator.push(
+                                  content,
+                                  MaterialPageRoute(builder: (context) => const SignInScreen()),
+                                );
                               },
                               child: const Text(
                                 "Sign In",
