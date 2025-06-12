@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'signin_screen.dart';  // Make sure to import your SignInScreen
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -46,7 +47,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Container(
                   constraints: const BoxConstraints(maxWidth: 400),
-                  padding: const EdgeInsets.all(24), // reduced padding
+                  padding: const EdgeInsets.all(24),
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.95),
                     borderRadius: BorderRadius.circular(16),
@@ -158,7 +159,12 @@ class _SignupScreenState extends State<SignupScreen> {
                               style: TextStyle(color: Colors.grey[600]),
                             ),
                             GestureDetector(
-                              onTap: () => Navigator.pop(context),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const SigninScreen()),
+                                );
+                              },
                               child: const Text(
                                 'Sign In',
                                 style: TextStyle(
