@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "635290938955",
+    "project_id": "gocart-b0866",
+    "storage_bucket": "gocart-b0866.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635290938955:android:b71e57749336abd963e7ce",
+        "android_client_info": {
+          "package_name": "com.example.gocart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_-4WAQqyiKiJo1QvECeq6noDYNN6vjB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
