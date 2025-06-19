@@ -98,12 +98,8 @@ class _SigninScreenState extends State<SigninScreen> {
                         ElevatedButton(
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Signing In...'),
-                                  backgroundColor: Colors.green,
-                                ),
-                              );
+                              Navigatotr.pushNamed(context, '/products');
+                              
                             }
                           },
                           style: ElevatedButton.styleFrom(
