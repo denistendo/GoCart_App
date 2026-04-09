@@ -98,7 +98,7 @@ class _SigninScreenState extends State<SigninScreen> {
                         ElevatedButton(
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              Navigatotr.pushNamed(context, '/products');
+                              Navigator.pushNamed(context, '/products');
                               
                             }
                           },
