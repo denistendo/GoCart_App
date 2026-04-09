@@ -104,7 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
-                            textAlign: BottomSheet.textAlign,
+                            textAlign: TextAlign.center,
                           ),
                           const SizedBox(height: 16),
                           Text(
