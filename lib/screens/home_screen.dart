@@ -56,9 +56,9 @@ class HomeScreen extends StatelessWidget {
                           width: 100,
                           margin: const EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.1),
+                            color: Colors.white.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(16),
-                            border: Border.all(color: Colors.white.withOpacity(0.2)),
+                            border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
                           ),
                           child: const Center(
                             child: Icon(Icons.category, color: Color(0xFF00E5FF), size: 40),
@@ -102,9 +102,9 @@ class HomeScreen extends StatelessWidget {
                           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.05),
+                              color: Colors.white.withValues(alpha: 0.05),
                               borderRadius: BorderRadius.circular(16),
-                              border: Border.all(color: Colors.white.withOpacity(0.2)),
+                              border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -142,7 +142,7 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: const Color(0xFF0F2027),
-          border: Border(top: BorderSide(color: Colors.white.withOpacity(0.1))),
+          border: Border(top: BorderSide(color: Colors.white.withValues(alpha: 0.1))),
         ),
         child: BottomNavigationBar(
           backgroundColor: Colors.transparent,

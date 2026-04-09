@@ -54,15 +54,15 @@ class _SignupScreenState extends State<SignupScreen> {
                     constraints: const BoxConstraints(maxWidth: 400),
                     padding: const EdgeInsets.all(32),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.08),
+                      color: Colors.white.withValues(alpha: 0.08),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white.withValues(alpha: 0.2),
                         width: 1.5,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withValues(alpha: 0.2),
                           blurRadius: 40,
                           spreadRadius: -10,
                         )
@@ -96,7 +96,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 15,
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                           ),
                           const SizedBox(height: 32),
@@ -142,7 +142,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: const Color(0xFF00BCD4).withOpacity(0.3),
+                                  color: const Color(0xFF00BCD4).withValues(alpha: 0.3),
                                   blurRadius: 20,
                                   offset: const Offset(0, 8),
                                 ),
@@ -190,7 +190,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             children: [
                               Text(
                                 'Already have an account? ',
-                                style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                                style: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                               ),
                               GestureDetector(
                                 onTap: () {

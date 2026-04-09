@@ -58,9 +58,9 @@ class ProductsScreen extends StatelessWidget {
                           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.05),
+                              color: Colors.white.withValues(alpha: 0.05),
                               borderRadius: BorderRadius.circular(16),
-                              border: Border.all(color: Colors.white.withOpacity(0.2)),
+                              border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -103,8 +103,8 @@ class ProductsScreen extends StatelessWidget {
       margin: const EdgeInsets.only(right: 8),
       child: Chip(
         label: Text(label, style: const TextStyle(color: Colors.white)),
-        backgroundColor: Colors.white.withOpacity(0.1),
-        side: BorderSide(color: Colors.white.withOpacity(0.2)),
+        backgroundColor: Colors.white.withValues(alpha: 0.1),
+        side: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
       ),
     );
   }

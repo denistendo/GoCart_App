@@ -33,15 +33,15 @@ class CheckoutScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.white.withOpacity(0.2)),
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
                   ),
                   child: Row(
                     children: [
                       Container(
                         padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(color: const Color(0xFF00BCD4).withOpacity(0.2), shape: BoxShape.circle),
+                        decoration: BoxDecoration(color: const Color(0xFF00BCD4).withValues(alpha: 0.2), shape: BoxShape.circle),
                         child: const Icon(Icons.location_on, color: Color(0xFF00E5FF)),
                       ),
                       const SizedBox(width: 16),
@@ -51,7 +51,7 @@ class CheckoutScreen extends StatelessWidget {
                           children: [
                             const Text("Home Address", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                             const SizedBox(height: 4),
-                            Text("123 Galaxy Way, Sector 4\nNew York, NY 10001", style: TextStyle(color: Colors.white.withOpacity(0.6))),
+                            Text("123 Galaxy Way, Sector 4\nNew York, NY 10001", style: TextStyle(color: Colors.white.withValues(alpha: 0.6))),
                           ],
                         ),
                       ),
@@ -65,7 +65,7 @@ class CheckoutScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.05),
+                    color: Colors.white.withValues(alpha: 0.05),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(color: const Color(0xFF00E5FF)),
                   ),
@@ -73,7 +73,7 @@ class CheckoutScreen extends StatelessWidget {
                     children: [
                       Container(
                         padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(color: Colors.white.withOpacity(0.1), shape: BoxShape.circle),
+                        decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.1), shape: BoxShape.circle),
                         child: const Icon(Icons.credit_card, color: Colors.white),
                       ),
                       const SizedBox(width: 16),

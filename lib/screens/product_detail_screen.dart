@@ -48,8 +48,8 @@ class ProductDetailScreen extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.05),
-                      border: Border(top: BorderSide(color: Colors.white.withOpacity(0.2), width: 1.5)),
+                      color: Colors.white.withValues(alpha: 0.05),
+                      border: Border(top: BorderSide(color: Colors.white.withValues(alpha: 0.2), width: 1.5)),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +64,7 @@ class ProductDetailScreen extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
-                                color: const Color(0xFF00BCD4).withOpacity(0.2),
+                                color: const Color(0xFF00BCD4).withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: const Text("\$299.00", style: TextStyle(color: Color(0xFF00E5FF), fontSize: 18, fontWeight: FontWeight.bold)),
@@ -80,7 +80,7 @@ class ProductDetailScreen extends StatelessWidget {
                             const Icon(Icons.star, color: Colors.amber, size: 20),
                             const Icon(Icons.star_half, color: Colors.amber, size: 20),
                             const SizedBox(width: 8),
-                            Text("4.5 (128 reviews)", style: TextStyle(color: Colors.white.withOpacity(0.7))),
+                            Text("4.5 (128 reviews)", style: TextStyle(color: Colors.white.withValues(alpha: 0.7))),
                           ],
                         ),
                         const SizedBox(height: 24),
@@ -91,7 +91,7 @@ class ProductDetailScreen extends StatelessWidget {
                         const SizedBox(height: 8),
                         Text(
                           "These premium over-ear headphones deliver exceptional sound quality with active noise cancellation. Perfect for commuting or relaxing.",
-                          style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 15, height: 1.5),
+                          style: TextStyle(color: Colors.white.withValues(alpha: 0.7), fontSize: 15, height: 1.5),
                         ),
                         const Spacer(),
                         SizedBox(

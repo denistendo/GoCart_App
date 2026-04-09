@@ -32,7 +32,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text("John Doe", style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold)),
-              Text("johndoe@example.com", style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 16)),
+              Text("johndoe@example.com", style: TextStyle(color: Colors.white.withValues(alpha: 0.6), fontSize: 16)),
               const SizedBox(height: 32),
               Expanded(
                 child: Container(
@@ -58,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: const Color(0xFF0F2027),
-          border: Border(top: BorderSide(color: Colors.white.withOpacity(0.1))),
+          border: Border(top: BorderSide(color: Colors.white.withValues(alpha: 0.1))),
         ),
         child: BottomNavigationBar(
           backgroundColor: Colors.transparent,
@@ -85,7 +85,7 @@ class ProfileScreen extends StatelessWidget {
     return ListTile(
       leading: Container(
         padding: const EdgeInsets.all(8),
-        decoration: BoxDecoration(color: Colors.white.withOpacity(0.05), shape: BoxShape.circle),
+        decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.05), shape: BoxShape.circle),
         child: Icon(icon, color: color),
       ),
       title: Text(title, style: TextStyle(color: color, fontSize: 16)),

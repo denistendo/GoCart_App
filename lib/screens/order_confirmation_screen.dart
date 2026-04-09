@@ -21,7 +21,7 @@ class OrderConfirmationScreen extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(color: const Color(0xFF00E5FF).withOpacity(0.2), shape: BoxShape.circle),
+                decoration: BoxDecoration(color: const Color(0xFF00E5FF).withValues(alpha: 0.2), shape: BoxShape.circle),
                 child: const Icon(Icons.check_circle, color: Color(0xFF00E5FF), size: 100),
               ),
               const SizedBox(height: 32),
@@ -34,7 +34,7 @@ class OrderConfirmationScreen extends StatelessWidget {
               Text(
                 "Your order #GOC12345678 is confirmed.\nYou will receive a confirmation email shortly.",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 16, height: 1.5),
+                style: TextStyle(color: Colors.white.withValues(alpha: 0.7), fontSize: 16, height: 1.5),
               ),
               const SizedBox(height: 48),
               SizedBox(
@@ -42,10 +42,10 @@ class OrderConfirmationScreen extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white.withOpacity(0.1),
+                    backgroundColor: Colors.white.withValues(alpha: 0.1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
-                      side: BorderSide(color: Colors.white.withOpacity(0.2)),
+                      side: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
                     ),
                   ),
                   onPressed: () {

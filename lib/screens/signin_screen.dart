@@ -51,15 +51,15 @@ class _SigninScreenState extends State<SigninScreen> {
                     constraints: const BoxConstraints(maxWidth: 400),
                     padding: const EdgeInsets.all(32),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.08),
+                      color: Colors.white.withValues(alpha: 0.08),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white.withValues(alpha: 0.2),
                         width: 1.5,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withValues(alpha: 0.2),
                           blurRadius: 40,
                           spreadRadius: -10,
                         )
@@ -94,7 +94,7 @@ class _SigninScreenState extends State<SigninScreen> {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 15,
-                              color: Colors.white.withOpacity(0.6),
+                              color: Colors.white.withValues(alpha: 0.6),
                             ),
                           ),
                           const SizedBox(height: 48),
@@ -124,7 +124,7 @@ class _SigninScreenState extends State<SigninScreen> {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: const Color(0xFF00BCD4).withOpacity(0.3),
+                                  color: const Color(0xFF00BCD4).withValues(alpha: 0.3),
                                   blurRadius: 20,
                                   offset: const Offset(0, 8),
                                 ),
@@ -161,7 +161,7 @@ class _SigninScreenState extends State<SigninScreen> {
                             children: [
                               Text(
                                 'Don\'t have an account? ',
-                                style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                                style: TextStyle(color: Colors.white.withValues(alpha: 0.7)),
                               ),
                               GestureDetector(
                                 onTap: () {
@@ -204,15 +204,15 @@ class _SigninScreenState extends State<SigninScreen> {
       style: const TextStyle(fontSize: 16, color: Colors.white),
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: TextStyle(color: Colors.white.withOpacity(0.6)),
-        prefixIcon: Icon(prefixIcon, color: Colors.white.withOpacity(0.6)),
+        labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.6)),
+        prefixIcon: Icon(prefixIcon, color: Colors.white.withValues(alpha: 0.6)),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
@@ -227,7 +227,7 @@ class _SigninScreenState extends State<SigninScreen> {
           borderSide: const BorderSide(color: Colors.redAccent, width: 2),
         ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        fillColor: Colors.white.withOpacity(0.05),
+        fillColor: Colors.white.withValues(alpha: 0.05),
         filled: true,
       ),
       validator: (value) {
